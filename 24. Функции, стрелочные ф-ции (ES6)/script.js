@@ -24,7 +24,11 @@ const anotherNum = ret();
 console.log(anotherNum);
 
 const logger = function () {
-    console.log("Hello");
+	console.log("Hello");
 };
 
 logger();
+
+const res = (a, b) => {return (a + b)}; // this function does not have this context!
+
+console.log(res(2, 3));
