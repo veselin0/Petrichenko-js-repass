@@ -43,7 +43,7 @@ const discount = 0.9;
 
 function currencyConverter(amount, currency) {
 	return amount * currency;
-};
+}
 
 const convercion = currencyConverter(500, currencyEUR);
 
@@ -52,3 +52,13 @@ function promotion(result) {
 }
 
 console.log(promotion(convercion));
+
+function test() {
+	for (let i = 0; i < 5; i++) {
+		console.log(i);
+		if (i === 3) return;
+	}
+	console.log("done");
+}
+
+test();
