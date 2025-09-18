@@ -29,6 +29,20 @@ const logger = function () {
 
 logger();
 
-const res = (a, b) => {return (a + b)}; // this function does not have this context!
+const res = (a, b) => {
+	return a + b;
+}; // this function does not have this context!
 
 console.log(res(2, 3));
+
+
+
+const currencyUSD = 20;
+const currencyEUR = 30;
+
+function currencyConverter(amount, currency) {
+	console.log(amount * currency);
+}
+
+currencyConverter(500, currencyUSD);
+currencyConverter(500, currencyEUR);
