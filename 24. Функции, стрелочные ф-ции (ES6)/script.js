@@ -35,14 +35,20 @@ const res = (a, b) => {
 
 console.log(res(2, 3));
 
-
+///
 
 const currencyUSD = 20;
 const currencyEUR = 30;
+const discount = 0.9;
 
 function currencyConverter(amount, currency) {
-	console.log(amount * currency);
+	return amount * currency;
+};
+
+const convercion = currencyConverter(500, currencyEUR);
+
+function promotion(result) {
+	return discount * result;
 }
 
-currencyConverter(500, currencyUSD);
-currencyConverter(500, currencyEUR);
+console.log(promotion(convercion));
