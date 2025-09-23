@@ -46,7 +46,7 @@ const personalMovieDB = {
 };
 
 for (let i = 0; i < 2; i++) {
-	const filmName = prompt("One of the last films you watched?", "");
+	const filmName = prompt("One of the last films you watched?", "").trim();
 	const filmRating = prompt("How high do you rate that film?", "");
 
 	if (
