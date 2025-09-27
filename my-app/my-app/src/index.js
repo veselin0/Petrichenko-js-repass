@@ -4,7 +4,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const elem = <h2>'Hello World'</h2>
+const text = 'Hello Goch Koch'
+
+const elem = (
+  <div>
+    <h2 className='text'>Current text: {text}</h2>
+    <input type="text" name="goch" id="23" />
+    <label htmlFor="23"></label>
+    <button tabIndex = "0">Click</button>
+  </div>
+)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
